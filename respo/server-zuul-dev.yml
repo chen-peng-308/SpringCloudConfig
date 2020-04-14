@@ -1,0 +1,12 @@
+zuul:
+  ignored-patterns: /**/list/**
+  routes:
+    sixth:
+      path: /zppl-c/**
+      serviceId: service-f
+ribbon:
+  eureka:
+    enabled: false
+service-f:
+  ribbon:
+    listOfServers: http://localhost:8004/
